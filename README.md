@@ -1,10 +1,6 @@
 # intercom-php
 
-[![Circle CI](https://circleci.com/gh/intercom/intercom-php.png?style=shield)](https://circleci.com/gh/intercom/intercom-php)
-[![packagist](https://img.shields.io/packagist/v/intercom/intercom-php.svg)](https://packagist.org/packages/intercom/intercom-php)
-![Intercom API Version](https://img.shields.io/badge/Intercom%20API%20Version-1.3-blue)
-
-> Official PHP bindings to the [Intercom API](https://api.intercom.io/docs)
+> This is a fork of intercom/intercom-php that is compatible with psr/http-message 1.0 and 2.0
 
 ## Project Updates
 
@@ -24,8 +20,22 @@ This library uses [HTTPlug](https://github.com/php-http/httplug) as HTTP client.
 
 The recommended way to install intercom-php is through [Composer](https://getcomposer.org):
 
+Add the following to composer.json
+
+```json
+    "repositories": [
+        // ...
+        {
+            "url": "https://github.com/akalantari/intercom-php",
+            "type": "git"
+        }
+    ]
+```
+
+And then run 
+
 ```sh
-composer require intercom/intercom-php php-http/guzzle6-adapter
+composer require akalantari/intercom-php:dev-master
 ```
 
 ## Clients
